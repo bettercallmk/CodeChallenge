@@ -4,7 +4,6 @@ function solution(numbers) {
     for(let i=0; i<numbers.length; i++) {
         answer += numbers[i];
     }
-    const average = answer/numbers.length;
     
-    return average;
+    return answer/numbers.length;
 }
