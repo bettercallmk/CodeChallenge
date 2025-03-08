@@ -1,7 +1,12 @@
 function solution(n, k) {
-    var answer = (n * 12000) + (k * 2000);
-    if (n >= 10) {
-        answer -= parseInt(n/10) * 2000;
+    let answer = 0;
+    let discount = 0;
+    
+    answer += n * 12000;
+    answer += k * 2000;
+    
+    if (n>=10) {
+        discount += (parseInt(n/10) * 2000);
     }
-    return answer;
+    return answer-discount;
 }
