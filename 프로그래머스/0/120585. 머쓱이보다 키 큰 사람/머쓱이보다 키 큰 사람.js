@@ -1,10 +1,5 @@
 function solution(array, height) {
-    var answer = 0;
+    var answer = array.filter(arr => arr > height);
     
-    for(let arr of array) {
-        if (height < arr) {
-            answer++;
-        }
-    }
-    return answer;
+    return answer.length;
 }
