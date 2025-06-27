@@ -1,6 +1,3 @@
 function solution(numbers) {
-    const total = numbers.reduce((acc, cur) => {
-        return acc + cur;
-    }, 0);
-    return total / numbers.length;
+    return numbers.reduce((acc, cur) => acc + cur, 0) / numbers.length;
 }
