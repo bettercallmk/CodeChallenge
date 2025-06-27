@@ -1,11 +1,9 @@
 function solution(n) {
-    let answer = 0;
+    var answer = 0;
     
-    
-    for (let i=n; i>0; i--) {
-        if (i%2==0) {
-            answer += i;
-        }
+    for (let i = 2; i <= n; i+=2) {
+        answer += i;
     }
+    
     return answer;
 }
