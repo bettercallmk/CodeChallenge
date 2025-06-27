@@ -1,4 +1,4 @@
 function solution(age) {
-    let answer = 2022-age+1;
+    var answer = 2023-age;
     return answer;
 }
